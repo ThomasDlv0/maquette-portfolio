@@ -372,6 +372,7 @@ main #contact .contact-content-input .contact-input{
 main #contact .contact-content-input .contact-input input{
     width: 100%;
     margin-right: 10px;
+    border: 1px solid #e8e8e8;
 }
 
 main #contact .contact-content-input .contact-input input:last-child{
@@ -386,6 +387,7 @@ main #contact .contact-content-input .contact-input-message {
 
 main #contact .contact-content-input .contact-input-message input{
     width: 100%;
+    border: 1px solid #e8e8e8;
 }
 
 main #contact .contact-content-input .contact-input-submit {
