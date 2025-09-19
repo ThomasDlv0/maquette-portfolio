@@ -49,6 +49,7 @@ header #home .navbar {
     justify-content: space-between;
     padding: 10px 20px;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 header #home .navbar a{
@@ -184,7 +185,7 @@ main #about .progress .progress-info{
 }
 
 main #about .progress .progress-info>div{
-    padding: 10px;
+    padding: 10px 0;
     background-color: #616161;
     overflow: hidden;
     color: white;
@@ -281,7 +282,7 @@ main #portfolio .section-width>a {
 .portfolio-content-image {
     display: flex;
     width: 24%;
-    margin: 5px 0;
+    margin: 6px 0;
 }
 
 .portfolio-content-image img{
