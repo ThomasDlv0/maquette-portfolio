@@ -1,0 +1,438 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../font/Lato/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ========== Reset ==========*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* ========== Navbar ==========*/
+
+header #home {
+    position: relative;
+    background-image: url(../img/parallax1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+header #home .navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+header #home .navbar a{
+    color: #767678;
+}
+
+header #home .navbar nav{
+    display: flex;
+}
+
+header #home .navbar nav li a{
+    color: #767678;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+header #home>h1 {
+    position: absolute;
+    padding: 10px;
+    background-color: #3F3F3F;
+    color: white;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 300;
+}
+
+/* ========== About Me ==========*/
+
+main #about {
+    margin: 100px 0 0 0;
+    width: 100%;
+}
+
+main  .section-width {
+    width: 70%;
+    margin: 0 auto;
+    color: #767678;
+}
+
+main #about .section-width>h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+main #about .section-width>p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+main #about .section-width>p:nth-child(3) {
+    text-align: start;
+    font-style: normal;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+main #about .about-content-bar {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+}
+
+main #about .about-content-pres {
+    display: flex;
+}
+
+main #about .about-content-pres>div{
+    width: 50%;
+}
+
+main #about .about-content-pres-img {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+main #about .about-content-pres-img p {
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+main #about .about-content-pres-img p i{
+    margin-right: 15px;
+}
+
+main #about .about-content-pres-text {
+    text-align: start;
+    font-style: normal;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+main #about .about-content-progress {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+main #about .about-progress {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+main #about .progress {
+    width: 100%;
+}
+
+main #about .progress h4 {
+    width: 100%;
+    text-align: start;
+    margin: 20px 0;
+    font-size: 1.2em;
+    letter-spacing: 10px;
+}
+
+main #about .progress .progress-info{
+    width: 100%;
+    border-radius: 0;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+main #about .progress .progress-info>div{
+    padding: 10px;
+    background-color: #616161;
+    overflow: hidden;
+    color: white;
+}
+
+main #about .progress #progress-info-photography{
+    width: 90%;
+}
+
+main #about .progress #progress-info-web-design{
+    width: 85%;
+}
+
+main #about .progress #progress-info-photoshop{
+    width: 75%;
+}
+
+main #about .about-content-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+    background-color: #616161;
+    color: white;
+}
+
+main #about .about-content-info {
+    width: 100%;
+    text-align: center;
+}
+
+main #about .about-content-info .about-text-chiffre{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* ========== Porfolio ==========*/
+
+#portfolio {
+    margin-bottom: 100px;
+}
+
+#portfolio .portfolio-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/parallax2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 50%;
+    width: 100%;
+    height: 50vh;
+}
+
+#portfolio .portfolio-image h2{
+    font-size: 4em;
+    color: white;
+    letter-spacing: 20px;
+    font-weight: 100;
+}
+
+main #portfolio .section-width>h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+main #portfolio .section-width>p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+main #portfolio .section-width>a {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 15px 25px;
+    background-color: #F1F1F1;
+    text-transform: uppercase;
+}
+
+#portfolio .portfolio-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+    margin-top: 50px;
+}
+
+.portfolio-content-image {
+    display: flex;
+    width: 24%;
+    margin: 5px 0;
+}
+
+.portfolio-content-image img{
+    width: 100%;
+}
+
+/* ========== Contact ==========*/
+
+#contact {
+margin-bottom: 100px;
+}
+
+main #contact .contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/parallax3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    width: 100%;
+    height: 60vh;
+}
+
+main #contact .contact-image h2{
+    font-size: 4em;
+    color: white;
+    letter-spacing: 20px;
+    font-weight: 100;
+}
+
+main #contact .section-width>h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+main #contact .section-width>p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 60px;
+}
+
+main #contact .contact-content {
+    width: 100%;
+    display: flex;
+}
+
+main #contact .contact-content-image {
+    width: 30%;
+}
+
+main #contact .contact-content-image img{
+    width: 100%;
+}
+
+main #contact .contact-content-text{
+    width: 55%;
+    margin-left: 30px;
+}
+
+main #contact .contact-content-text>p {
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+main #contact .contact-content-text>p i {
+    margin-right: 20px;
+}
+
+main #contact .contact-content-input p{
+    font-size: 1.1em;
+}
+
+main #contact .contact-content-input form input{
+    padding: 10px 5px;
+}
+
+main #contact .contact-content-input .contact-input{
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+main #contact .contact-content-input .contact-input input{
+    width: 100%;
+    margin-right: 10px;
+}
+
+main #contact .contact-content-input .contact-input input:last-child{
+    margin-right: 0;
+}
+
+
+main #contact .contact-content-input .contact-input-message {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+main #contact .contact-content-input .contact-input-message input{
+    width: 100%;
+}
+
+main #contact .contact-content-input .contact-input-submit {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+main #contact .contact-content-input .contact-input-submit button{
+    border: none;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* ========== Footer ==========*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    background-color: #666666;
+}
+
+footer>div {
+    margin: 10px 0;
+    color: white;
+}
+
+footer>div .btn-footer {
+    background-color: #f1f1f1;
+    color: #666666;
+    padding: 10px;
+}
+
+footer>div .btn-footer i{
+    margin-right: 5px;
+}
+
+footer>div a{
+    color: white;
+}
